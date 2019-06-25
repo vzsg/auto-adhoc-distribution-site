@@ -1,0 +1,43 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ html {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     font-family: 'helvetica', sans-serif;
+     font-size: 18px;
+     color: white;
+     background-color: black;
+     height: 100%;
+ }
+
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+ }
+
+ a.download {
+   font-size: inherit;
+   font-family: inherit;
+   background-color: black;
+   color: white;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+ }
+
+ .app {
+   text-align: center;
+   padding: 2rem;
+ }
+
+ img {
+  display: inline-block;
+ }

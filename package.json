@@ -1,0 +1,19 @@
+{
+  "name": "auto-adhoc-distribution-site",
+  "version": "1.0.0",
+  "description": "An automatic site to facilitate the ad hoc distribution of iOS apps",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "reiko-parser": "^1.0.1"
+  },
+  "repository": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
