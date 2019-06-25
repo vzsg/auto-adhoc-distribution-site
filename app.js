@@ -26,8 +26,9 @@ const parsePackageAsync = function(path) {
 
 async function main() {
 	console.log('Searching for packages...')
-	const ipaFiles = await readdirAsync(path.join(__dirname, 'apps'))
-
+	const allFiles = await readdirAsync(path.join(__dirname, 'apps'))
+	const ipaFiles = allFiles.filter(fileName => fileName.toLowerCase().endsWith(".ipa"))
+	
 	console.log('Parsing packages...')
 
 	const apps = await Promise.all(ipaFiles.map(async ipa => {
